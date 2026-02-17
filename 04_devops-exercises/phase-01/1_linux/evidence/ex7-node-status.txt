@@ -1,0 +1,45 @@
+=== EX7: Node App status check (PID + port) ===
+Tue Feb 17 04:46:39 UTC 2026
+
+=== EX7: Start app + check status ===
+=== EX6: Start Node app (env vars + background) ===
+Hit:1 http://mirrors.digitalocean.com/ubuntu noble InRelease
+Hit:2 http://security.ubuntu.com/ubuntu noble-security InRelease
+Hit:3 http://mirrors.digitalocean.com/ubuntu noble-updates InRelease
+Hit:4 https://repos-droplet.digitalocean.com/apt/droplet-agent main InRelease
+Hit:5 http://mirrors.digitalocean.com/ubuntu noble-backports InRelease
+Reading package lists...
+Building dependency tree...
+Reading state information...
+All packages are up to date.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+nodejs is already the newest version (18.19.1+dfsg-6ubuntu5).
+npm is already the newest version (9.2.0~ds1-2).
+curl is already the newest version (8.5.0-2ubuntu10.6).
+tar is already the newest version (1.35+dfsg-3build1).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Node: v18.19.1
+NPM : 9.2.0
+
+added 50 packages, and audited 51 packages in 2s
+
+7 vulnerabilities (3 low, 4 high)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues, run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+✅ Started in background. Log: /home/gafari/devops-and-cloud-projects-lab/04_devops-exercises/phase-01/1_linux/package/node-app.out
+✅ App PID: 24926
+    PID    PPID CMD                             ELAPSED %CPU %MEM
+  24926       1 node server.js                    00:26  1.2  2.8
+Listening port(s):
+LISTEN 0      511                *:3000            *:*    users:(("node",pid=24926,fd=24))
+
+---- Fallback port check: ss -ltnp | grep node ----
+LISTEN 0      511                *:3000            *:*    users:(("node",pid=24926,fd=24))

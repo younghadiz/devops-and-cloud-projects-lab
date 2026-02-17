@@ -1,0 +1,10 @@
+=== EX5: Sorted by CPU, top 5 ===
+Tue Feb 17 04:44:01 UTC 2026
+
+=== EX5: Sort + limit user processes ===
+    PID    PPID %CPU %MEM     ELAPSED CMD
+  17198   17090  0.0  0.3       20:15 sshd: gafari@pts/1
+  17094       1  0.0  0.5       20:15 /usr/lib/systemd/systemd --user
+  17201   17198  0.0  0.2       20:15 -bash
+  17095   17094  0.0  0.1       20:15 (sd-pam)
+  19763   17201  0.0  0.1       00:00 -bash

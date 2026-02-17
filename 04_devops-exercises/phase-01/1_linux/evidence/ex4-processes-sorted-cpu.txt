@@ -1,0 +1,13 @@
+=== EX4: Sorted by CPU ===
+Tue Feb 17 04:43:37 UTC 2026
+
+=== EX4: Sort user processes by CPU or MEM ===
+    PID    PPID %CPU %MEM     ELAPSED CMD
+  17198   17090  0.0  0.3       19:50 sshd: gafari@pts/1
+  17094       1  0.0  0.5       19:51 /usr/lib/systemd/systemd --user
+  17201   17198  0.0  0.2       19:50 -bash
+  17095   17094  0.0  0.1       19:51 (sd-pam)
+  19753   17201  0.0  0.1       00:00 -bash
+  19754   17201  0.0  0.0       00:00 tee evidence/ex4-processes-sorted-cpu.txt
+  19757   19753  0.0  0.1       00:00 bash ./scripts/ex4-user-processes-sorted.sh
+  19761   19757  0.0  0.2       00:00 ps -u gafari -o pid,ppid,%cpu,%mem,etime,cmd --sort=-%cpu

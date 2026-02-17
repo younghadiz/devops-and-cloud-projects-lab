@@ -1,0 +1,13 @@
+# Ignore Node artifact archive
+bootcamp-node-envvars-project-1.0.0.tgz
+
+# Ignore extracted package folder
+package/
+
+# Ignore node output logs
+*.out
+logs/
+
+# Ignore app logs
+*.log
+

@@ -1,0 +1,42 @@
+=== EX9: Node App run as service user myapp ===
+Tue Feb 17 04:47:40 UTC 2026
+
+=== EX9: Run app as service user myapp ===
+Hit:1 http://mirrors.digitalocean.com/ubuntu noble InRelease
+Hit:2 http://mirrors.digitalocean.com/ubuntu noble-updates InRelease
+Hit:3 http://mirrors.digitalocean.com/ubuntu noble-backports InRelease
+Hit:4 https://repos-droplet.digitalocean.com/apt/droplet-agent main InRelease
+Hit:5 http://security.ubuntu.com/ubuntu noble-security InRelease
+Reading package lists...
+Building dependency tree...
+Reading state information...
+All packages are up to date.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+nodejs is already the newest version (18.19.1+dfsg-6ubuntu5).
+npm is already the newest version (9.2.0~ds1-2).
+curl is already the newest version (8.5.0-2ubuntu10.6).
+tar is already the newest version (1.35+dfsg-3build1).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+
+added 50 packages, and audited 51 packages in 3s
+
+7 vulnerabilities (3 low, 4 high)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues, run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+✅ Running as: myapp
+✅ App running as myapp
+
+---- Verify running as myapp ----
+26093
+✅ running as myapp
+
+UID          PID    PPID  C STIME TTY          TIME CMD
+myapp      26093       1 40 04:47 ?        00:00:00 node server.js

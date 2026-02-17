@@ -1,0 +1,16 @@
+=== EX3: Processes for current user ===
+Tue Feb 17 04:43:12 UTC 2026
+USER=gafari
+
+=== EX3: Processes for current user ===
+USER: gafari
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+gafari     17094  0.0  0.5  20284 11392 ?        Ss   04:23   0:00 /usr/lib/systemd/systemd --user
+gafari     17095  0.0  0.1  21152  3516 ?        S    04:23   0:00 (sd-pam)
+gafari     17198  0.0  0.3  14992  7052 ?        S    04:23   0:00 sshd: gafari@pts/1
+gafari     17201  0.0  0.2   9192  5504 pts/1    Ss   04:23   0:00 -bash
+gafari     19746  0.0  0.1   9192  3512 pts/1    S+   04:43   0:00 -bash
+gafari     19747  0.0  0.0   6120  1664 pts/1    S+   04:43   0:00 tee evidence/ex3-user-processes.txt
+gafari     19749  0.0  0.1   7740  3456 pts/1    S+   04:43   0:00 bash ./scripts/ex3-user-processes.sh
+gafari     19750  0.0  0.2  11320  4352 pts/1    R+   04:43   0:00 ps aux
+gafari     19751  0.0  0.1   9588  3584 pts/1    S+   04:43   0:00 awk -v u=gafari NR==1 || $1==u {print}

@@ -1,0 +1,47 @@
+=== EX8: Node App with LOG_DIR=logs ===
+Tue Feb 17 04:47:02 UTC 2026
+
+=== EX8: Start app with LOG_DIR parameter ===
+LOG_DIR=/home/gafari/devops-and-cloud-projects-lab/04_devops-exercises/phase-01/1_linux/logs
+=== EX6: Start Node app (env vars + background) ===
+Hit:1 http://mirrors.digitalocean.com/ubuntu noble InRelease
+Hit:2 http://mirrors.digitalocean.com/ubuntu noble-updates InRelease
+Hit:3 http://mirrors.digitalocean.com/ubuntu noble-backports InRelease
+Hit:4 https://repos-droplet.digitalocean.com/apt/droplet-agent main InRelease
+Hit:5 http://security.ubuntu.com/ubuntu noble-security InRelease
+Reading package lists...
+Building dependency tree...
+Reading state information...
+All packages are up to date.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+nodejs is already the newest version (18.19.1+dfsg-6ubuntu5).
+npm is already the newest version (9.2.0~ds1-2).
+curl is already the newest version (8.5.0-2ubuntu10.6).
+tar is already the newest version (1.35+dfsg-3build1).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Node: v18.19.1
+NPM : 9.2.0
+
+added 50 packages, and audited 51 packages in 2s
+
+7 vulnerabilities (3 low, 4 high)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues, run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+✅ Started in background. Log: /home/gafari/devops-and-cloud-projects-lab/04_devops-exercises/phase-01/1_linux/package/node-app.out
+Check: /home/gafari/devops-and-cloud-projects-lab/04_devops-exercises/phase-01/1_linux/logs/app.log (if app writes it)
+
+---- ls -la logs ----
+total 8
+drwxrwxr-x 2 gafari gafari 4096 Feb 17 04:47 .
+drwxrwxr-x 6 gafari gafari 4096 Feb 17 04:47 ..
+
+---- logs/app.log (if exists) ----
+app.log not found yet

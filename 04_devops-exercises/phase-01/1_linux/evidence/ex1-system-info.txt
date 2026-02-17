@@ -1,0 +1,59 @@
+=== EX1 SYSTEM INFO ===
+Tue Feb 17 04:36:32 UTC 2026
+
+PRETTY_NAME="Ubuntu 24.04.4 LTS"
+NAME="Ubuntu"
+VERSION_ID="24.04"
+VERSION="24.04.4 LTS (Noble Numbat)"
+VERSION_CODENAME=noble
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=noble
+LOGO=ubuntu-logo
+
+Shell:
+/bin/bash
+/bin/bash
+
+Editors:
+editor - auto mode
+  link best version is /bin/nano
+  link currently points to /bin/nano
+  link editor is /usr/bin/editor
+  slave editor.1.gz is /usr/share/man/man1/editor.1.gz
+  slave editor.da.1.gz is /usr/share/man/da/man1/editor.1.gz
+  slave editor.de.1.gz is /usr/share/man/de/man1/editor.1.gz
+  slave editor.fr.1.gz is /usr/share/man/fr/man1/editor.1.gz
+  slave editor.it.1.gz is /usr/share/man/it/man1/editor.1.gz
+  slave editor.ja.1.gz is /usr/share/man/ja/man1/editor.1.gz
+  slave editor.pl.1.gz is /usr/share/man/pl/man1/editor.1.gz
+  slave editor.ru.1.gz is /usr/share/man/ru/man1/editor.1.gz
+  slave editor.tr.1.gz is /usr/share/man/tr/man1/editor.1.gz
+/bin/ed - priority -100
+  slave editor.1.gz: /usr/share/man/man1/ed.1.gz
+/bin/nano - priority 40
+  slave editor.1.gz: /usr/share/man/man1/nano.1.gz
+/usr/bin/vim.basic - priority 30
+  slave editor.1.gz: /usr/share/man/man1/vim.1.gz
+  slave editor.da.1.gz: /usr/share/man/da/man1/vim.1.gz
+  slave editor.de.1.gz: /usr/share/man/de/man1/vim.1.gz
+  slave editor.fr.1.gz: /usr/share/man/fr/man1/vim.1.gz
+  slave editor.it.1.gz: /usr/share/man/it/man1/vim.1.gz
+  slave editor.ja.1.gz: /usr/share/man/ja/man1/vim.1.gz
+  slave editor.pl.1.gz: /usr/share/man/pl/man1/vim.1.gz
+  slave editor.ru.1.gz: /usr/share/man/ru/man1/vim.1.gz
+  slave editor.tr.1.gz: /usr/share/man/tr/man1/vim.1.gz
+/usr/bin/vim.tiny - priority 15
+  slave editor.1.gz: /usr/share/man/man1/vim.1.gz
+  slave editor.da.1.gz: /usr/share/man/da/man1/vim.1.gz
+  slave editor.de.1.gz: /usr/share/man/de/man1/vim.1.gz
+  slave editor.fr.1.gz: /usr/share/man/fr/man1/vim.1.gz
+  slave editor.it.1.gz: /usr/share/man/it/man1/vim.1.gz
+  slave editor.ja.1.gz: /usr/share/man/ja/man1/vim.1.gz
+  slave editor.pl.1.gz: /usr/share/man/pl/man1/vim.1.gz
+  slave editor.ru.1.gz: /usr/share/man/ru/man1/vim.1.gz
+  slave editor.tr.1.gz: /usr/share/man/tr/man1/vim.1.gz

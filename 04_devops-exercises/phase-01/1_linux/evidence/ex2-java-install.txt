@@ -1,0 +1,28 @@
+=== EX2: Install Java + verify version ===
+Tue Feb 17 04:42:35 UTC 2026
+
+=== EX2: Install Java and verify version (>=11) ===
+Hit:1 http://mirrors.digitalocean.com/ubuntu noble InRelease
+Hit:2 http://mirrors.digitalocean.com/ubuntu noble-updates InRelease
+Hit:3 https://repos-droplet.digitalocean.com/apt/droplet-agent main InRelease
+Hit:4 http://mirrors.digitalocean.com/ubuntu noble-backports InRelease
+Hit:5 http://security.ubuntu.com/ubuntu noble-security InRelease
+Reading package lists...
+Building dependency tree...
+Reading state information...
+All packages are up to date.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+default-jre is already the newest version (2:1.21-75+exp1).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Detected: openjdk version "21.0.10" 2026-01-20
+✅ Success: Java major version is 21 (>=11).
+
+java -version (raw):
+openjdk version "21.0.10" 2026-01-20
+OpenJDK Runtime Environment (build 21.0.10+7-Ubuntu-124.04)
+OpenJDK 64-Bit Server VM (build 21.0.10+7-Ubuntu-124.04, mixed mode, sharing)
+
+which java:
+/usr/bin/java
