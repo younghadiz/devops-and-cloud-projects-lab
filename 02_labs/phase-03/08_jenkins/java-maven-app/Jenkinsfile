@@ -8,9 +8,10 @@ pipeline {
        stage('Build') {
            steps {
                 
-                echo "Branch: ${env.BRANCH_NAME}"
-
                 echo 'Building the application'
+                // testing the git branch variables.
+                echo "BRANCH_NAME: ${env.BRANCH_NAME}"
+                echo "GIT_BRANCH: ${env.GIT_BRANCH}"
            }
        }
 
