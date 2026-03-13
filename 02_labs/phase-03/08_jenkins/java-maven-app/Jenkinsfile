@@ -9,8 +9,7 @@ pipeline {
            steps {
                 
                 echo 'Building the application'
-                // testing the git branch variables.
-                echo "BRANCH_NAME: ${env.BRANCH_NAME}"
+                // testing the git branch variables by calling them directly from git.
                 echo "GIT_BRANCH: ${env.GIT_BRANCH}"
            }
        }
