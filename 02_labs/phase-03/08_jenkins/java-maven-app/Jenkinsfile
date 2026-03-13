@@ -7,7 +7,10 @@ pipeline {
 
        stage('Build') {
            steps {
-               echo 'Building the application'
+                
+                echo "Branch: ${env.BRANCH_NAME}"
+
+                echo 'Building the application'
            }
        }
 
@@ -17,8 +20,8 @@ pipeline {
                expression { env.BRANCH_NAME == 'dev' }
            }
            steps {
-               echo 'Testing the application'
-           }
+               echo 'Testing the application on ${env.BRANCH_NAME}'
+           } 
        }
 
 
