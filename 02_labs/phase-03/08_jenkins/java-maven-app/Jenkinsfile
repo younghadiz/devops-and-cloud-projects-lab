@@ -14,17 +14,19 @@ pipeline {
 
        stage('Build') {
            steps {
-               echo "Building version ${env.VERSION}"
-               echo 'Building the application'
+               dir('02_labs/phase-03/08_jenkins/java-maven-app') {
+                    echo "Building version ${env.VERSION}"
+                    echo 'Building the application'
 
-               // show Maven version to verify tool installation
-               sh 'mvn -v'
+                    // show Maven version to verify tool installation
+                    sh 'mvn -v'
 
-               // example build command
-               sh 'mvn clean package'
+                    // example build command
+                    sh 'mvn clean package'
 
-               // testing the git branch variables
-               echo "GIT_BRANCH: ${env.GIT_BRANCH}"
+                    // testing the git branch variables
+                    echo "GIT_BRANCH: ${env.GIT_BRANCH}"
+               }
            }
        }
 
