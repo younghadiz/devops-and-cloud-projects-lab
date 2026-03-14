@@ -10,12 +10,26 @@ pipeline {
        SERVER_CREDS = credentials('server-credentials')
    }
 
+   parameters {
+       choice(
+           name: 'ENV',
+           choices: ['dev', 'staging', 'prod'],
+           description: 'Environment'
+       )
+       booleanParam(
+           name: 'EXECUTE_TESTS',
+           defaultValue: true,
+           description: 'Run tests?'
+       )
+   }
+
    stages {
 
        stage('Build') {
            steps {
                dir('02_labs/phase-03/08_jenkins/java-maven-app') {
                     echo "Building version ${env.VERSION}"
+                    echo "Selected environment: ${params.ENV}"
                     echo 'Building the application'
 
                     // show Maven version to verify tool installation
@@ -31,8 +45,11 @@ pipeline {
        }
 
        stage('Test') {
+           when {
+               expression { params.EXECUTE_TESTS }
+           }
            steps {
-               echo 'Testing the application'
+               echo "Testing the application for ${params.ENV}"
            }
        }
 
@@ -48,6 +65,7 @@ pipeline {
                        # example: scp / ssh / curl commands here
                    '''
                }
+               echo "Deploying to ${params.ENV}"
            }
        }
    }
