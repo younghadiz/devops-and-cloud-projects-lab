@@ -1,6 +1,10 @@
 pipeline {
    agent any
 
+   tools {
+       maven 'Maven3.9'
+   }
+
    environment {
        VERSION = "1.0.0"
        SERVER_CREDS = credentials('server-credentials')
@@ -12,7 +16,14 @@ pipeline {
            steps {
                echo "Building version ${env.VERSION}"
                echo 'Building the application'
-               // testing the git branch variables by calling them directly from git.
+
+               // show Maven version to verify tool installation
+               sh 'mvn -v'
+
+               // example build command
+               sh 'mvn clean package'
+
+               // testing the git branch variables
                echo "GIT_BRANCH: ${env.GIT_BRANCH}"
            }
        }
